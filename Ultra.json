@@ -1,0 +1,34 @@
+{
+	"project":
+	{
+		"configurations":
+		[
+			{
+				"launch":
+				[
+					{
+						"commandline": "+map \"$MAPFILE\"",
+						"path": "LuaTutorialProject.exe"
+					}
+				],
+				"name": "Run"
+			},
+			{
+				"launch":
+				[
+					{
+						"commandline": "+map \"$MAPFILE\"",
+						"path": "LuaTutorialProject_d.exe"
+					}
+				],
+				"name": "Debug"
+			}
+		],
+		"engineversion": "0.9.8",
+		"language": "Lua",
+		"name": "LuaTutorialProject",
+		"password": "O]k5A+?^cpF(e5!sIQAEjn8g^&V|)9t4ttEHDmMm0[7>fcKifLnh*wb$-!rlxFzy",
+		"template": "Common",
+		"uuid": "83fd6cf0-0ec4-42e3-b924-9982e0b24190"
+	}
+}
