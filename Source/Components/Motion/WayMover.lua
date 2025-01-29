@@ -68,8 +68,7 @@ function WayMover:MoveEnd()
         self:FireOutputs("EndMove")
         -- deleting entity if need to, after reaching final way point
         if (not doStay and self.nextPoint == nil and self.doDeleteAfterMovement and self.scene ~= nil) then
-            --commented out this code for now until bind for RemoveEntity will added
-            --self.scene:RemoveEntity(self.entity)
+            self.scene:RemoveEntity(self.entity)
         end
     end
 end
