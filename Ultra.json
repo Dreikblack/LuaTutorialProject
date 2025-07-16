@@ -1,6 +1,7 @@
 {
 	"project":
 	{
+		"brushtexelspermeter": 400,
 		"configurations":
 		[
 			{
@@ -24,10 +25,17 @@
 				"name": "Debug"
 			}
 		],
+		"debugcommandline": "-devmode +map \"$MAPFILE\"",
+		"debugexecutable": "LuaTutorialProject_d.exe",
 		"engineversion": "0.9.9",
+		"filetypeblacklist": "bin, meta, collider",
+		"gridbasesize": 0.16,
 		"language": "Lua",
+		"majorgridlines": 8,
 		"name": "LuaTutorialProject",
 		"password": "O]k5A+?^cpF(e5!sIQAEjn8g^&V|)9t4ttEHDmMm0[7>fcKifLnh*wb$-!rlxFzy",
+		"runcommandline": "-devmode +map \"$MAPFILE\"",
+		"runexecutable": "LuaTutorialProject.exe",
 		"template": "Common",
 		"uuid": "83fd6cf0-0ec4-42e3-b924-9982e0b24190"
 	}

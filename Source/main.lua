@@ -30,7 +30,7 @@ local function StartGameEventCallback(Event, Extra)
         --in lua .. used for string concatenation
         game = CreateGame("Maps/" .. Event.text);
     else
-        game = CreateGame("Maps/start.ultra");
+        game = CreateGame("Maps/strategy.ultra");
     end
 	--switching current render and update targets for loop
 	currentWorld = game.world
@@ -65,6 +65,7 @@ local labelHeight = framebuffer:GetSize().y * 0.2
 loadingBackground = CreateSprite(loadingWorld, framebuffer.size.x, framebuffer.size.y)
 loadingBackground:SetColor(0.2, 0.2, 0.2);
 loadingBackground:SetRenderLayers(2);
+loadingBackground:SetPosition(centerX, centerY, 0)
 loadingText = CreateSprite(loadingWorld, font, "LOADING", labelHeight, TEXT_CENTER | TEXT_MIDDLE)
 loadingText:SetPosition(centerX, centerY + labelHeight * 0.5, 0)
 -- 0 layer - no render, 1 - default render, we will use 2 for UI and sprites

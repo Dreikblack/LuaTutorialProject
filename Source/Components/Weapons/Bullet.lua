@@ -1,6 +1,8 @@
 Bullet = {}
 Bullet.name = "Bullet"
 Bullet.damage = 10
+Bullet.decalmaterial = LoadMaterial("Materials/Decals/Bullet Holes/Concrete/bullethole_concrete.mat");
+Bullet.smokematerial = LoadMaterial("Materials/Particles/smoke.mat");
 
 function Bullet.PickFilter(entity, extra)
     local ctype = entity:GetCollisionType()
@@ -29,7 +31,7 @@ function Bullet:Start()
     local world = entity:GetWorld()
 
     self.decal = CreateDecal(world)
-    self.decal:SetMaterial(LoadMaterial("Materials/Decals/Bullet Holes/Concrete/bullethole_concrete.mat"))
+    self.decal:SetMaterial(self.decalmaterial)
     self.decal:SetScale(0.08)
 
     self.emitters = {}
@@ -40,7 +42,7 @@ function Bullet:Start()
     self.emitters[1]:SetParticleColor(Vec4(1, 1, 1, 1), Vec4(1, 1, 1, 0))
     self.emitters[1]:SetParticleRandomVelocity(0.5, 0.5, 0.5)
     self.emitters[1]:SetLooping(false)
-    self.emitters[1]:SetMaterial(LoadMaterial("Materials/Particles/smoke.mat"))
+    self.emitters[1]:SetMaterial(self.smokematerial)
     self.emitters[1]:Pause()
     self.emitters[1]:SetHidden(true)
 

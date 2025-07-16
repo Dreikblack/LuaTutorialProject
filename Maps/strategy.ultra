@@ -1,0 +1,1833 @@
+{
+	"scene": {
+		"base": "Maps/strategy.ultra",
+		"entities": [
+			{
+				"brush": {
+					"faces": [
+						{
+							"bevel": false,
+							"edgesize": 0.0,
+							"indicecount": 4,
+							"indices": 96,
+							"localmappingplane": [
+								[
+									1.0,
+									0.0,
+									0.0,
+									-0.14999961853027344
+								],
+								[
+									0.0,
+									0.0,
+									-1.0,
+									6.5
+								]
+							],
+							"mappingplane": [
+								[
+									1.0,
+									0.0,
+									0.0,
+									-0.14999961853027344
+								],
+								[
+									0.0,
+									0.0,
+									-1.0,
+									6.5
+								]
+							],
+							"mappingscale": [
+								80.0,
+								80.0
+							],
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mesh": 0,
+							"meshvertexcount": 4,
+							"meshvertexstart": 0,
+							"smoothgroups": 0,
+							"subdivision": [
+								1,
+								1
+							]
+						},
+						{
+							"bevel": false,
+							"edgesize": 0.0,
+							"indicecount": 4,
+							"indices": 104,
+							"localmappingplane": [
+								[
+									-1.0,
+									0.0,
+									0.0,
+									0.14999961853027344
+								],
+								[
+									0.0,
+									0.0,
+									-1.0,
+									6.5
+								]
+							],
+							"mappingplane": [
+								[
+									-1.0,
+									0.0,
+									0.0,
+									0.14999961853027344
+								],
+								[
+									0.0,
+									0.0,
+									-1.0,
+									6.5
+								]
+							],
+							"mappingscale": [
+								400.0,
+								400.0
+							],
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mesh": 0,
+							"meshvertexcount": 4,
+							"meshvertexstart": 4,
+							"smoothgroups": 0,
+							"subdivision": [
+								1,
+								1
+							]
+						},
+						{
+							"bevel": false,
+							"edgesize": 0.0,
+							"indicecount": 4,
+							"indices": 112,
+							"localmappingplane": [
+								[
+									-1.0,
+									0.0,
+									0.0,
+									0.14999961853027344
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingplane": [
+								[
+									-1.0,
+									0.0,
+									0.0,
+									0.14999961853027344
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingscale": [
+								400.0,
+								400.0
+							],
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mesh": 0,
+							"meshvertexcount": 4,
+							"meshvertexstart": 8,
+							"smoothgroups": 0,
+							"subdivision": [
+								1,
+								1
+							]
+						},
+						{
+							"bevel": false,
+							"edgesize": 0.0,
+							"indicecount": 4,
+							"indices": 120,
+							"localmappingplane": [
+								[
+									1.0,
+									0.0,
+									0.0,
+									-0.14999961853027344
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingplane": [
+								[
+									1.0,
+									0.0,
+									0.0,
+									-0.14999961853027344
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingscale": [
+								400.0,
+								400.0
+							],
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mesh": 0,
+							"meshvertexcount": 4,
+							"meshvertexstart": 12,
+							"smoothgroups": 0,
+							"subdivision": [
+								1,
+								1
+							]
+						},
+						{
+							"bevel": false,
+							"edgesize": 0.0,
+							"indicecount": 4,
+							"indices": 128,
+							"localmappingplane": [
+								[
+									0.0,
+									0.0,
+									-1.0,
+									6.5
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingplane": [
+								[
+									0.0,
+									0.0,
+									-1.0,
+									6.5
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingscale": [
+								400.0,
+								400.0
+							],
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mesh": 0,
+							"meshvertexcount": 4,
+							"meshvertexstart": 16,
+							"smoothgroups": 0,
+							"subdivision": [
+								1,
+								1
+							]
+						},
+						{
+							"bevel": false,
+							"edgesize": 0.0,
+							"indicecount": 4,
+							"indices": 136,
+							"localmappingplane": [
+								[
+									0.0,
+									0.0,
+									1.0,
+									-6.5
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingplane": [
+								[
+									0.0,
+									0.0,
+									1.0,
+									-6.5
+								],
+								[
+									0.0,
+									-1.0,
+									0.0,
+									-0.10000000149011612
+								]
+							],
+							"mappingscale": [
+								400.0,
+								400.0
+							],
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mesh": 0,
+							"meshvertexcount": 4,
+							"meshvertexstart": 20,
+							"smoothgroups": 0,
+							"subdivision": [
+								1,
+								1
+							]
+						}
+					],
+					"meshes": [
+						{
+							"indicecount": 24,
+							"indices": 2064,
+							"indicestride": 4,
+							"materials": [
+								{
+									"path": "Materials/Ground/Ground036.mat"
+								},
+								null,
+								null,
+								null
+							],
+							"mode": 4,
+							"vertexcount": 24,
+							"vertexlayout": "0.9.8e",
+							"vertexstride": 76,
+							"vertices": 144
+						}
+					],
+					"vertexcount": 8,
+					"vertices": 0
+				},
+				"castshadows": true,
+				"collisiontype": 2,
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"group": [
+					"Brushes"
+				],
+				"mass": 0.0,
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"name": "Ground",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 2,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "33ce189f-a0c4-4abb-ac7d-e3c133a0343a",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": false,
+				"collisiontype": 0,
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {
+					"navmesh": 0
+				},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"group": [
+					"Entities"
+				],
+				"mass": 0.0,
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"name": "Navigation Mesh",
+				"navobstacle": false,
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "1b7f2812-8c11-4afa-9f69-a3ace44dd180",
+				"viewrange": 0.0
+			},
+			{
+				"camera": {
+					"clearcolor": [
+						0.125,
+						0.125,
+						0.125
+					],
+					"clearmode": 3,
+					"fov": 75.0,
+					"range": [
+						0.10000000149011612,
+						1000.0
+					]
+				},
+				"castshadows": false,
+				"collisiontype": 0,
+				"components": {
+					"StrategyController": {
+						"playerTeam": 1
+					},
+					"TopDownCamera": {
+						"maxHeight": 20,
+						"minHeight": 3,
+						"moveSpeed": 4
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x3fb33334",
+					"0x40d00000",
+					"0xc159999a",
+					"0x3f800000"
+				],
+				"name": "StrategyCamera",
+				"navobstacle": false,
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x3fb33334",
+					"0x40d00000",
+					"0xc159999a"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "ed46b6b4-8066-4d1c-a184-852730a6398d",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 40,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": true,
+						"maxHealth": 100,
+						"painCooldown": 1000,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 1
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0xbf7ffff4",
+					"0x80000000",
+					"0x343bbd2b",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0xb43bbd2b",
+					"0x0",
+					"0xbf7ffff4",
+					"0x0",
+					"0xc0266667",
+					"0x3dcccccd",
+					"0xc1866667",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Paladin/Paladin.mdl"
+				},
+				"name": "Paladin",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0xc0266667",
+					"0x3dcccccd",
+					"0xc1866667"
+				],
+				"quaternion": [
+					"0x0",
+					"0xbf7ffffd",
+					"0x80000000",
+					"0xb3bbbd2d"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x43340000",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "06f306dc-0b8f-4800-827b-491674b3fdd2",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 40,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": true,
+						"maxHealth": 100,
+						"painCooldown": 1000,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 1
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0xbf7ffff4",
+					"0x80000000",
+					"0x343bbd2b",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0xb43bbd2b",
+					"0x0",
+					"0xbf7ffff4",
+					"0x0",
+					"0xbf333336",
+					"0x3dcccccd",
+					"0xc1866667",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Paladin/Paladin.mdl"
+				},
+				"name": "Paladin",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0xbf333336",
+					"0x3dcccccd",
+					"0xc1866667"
+				],
+				"quaternion": [
+					"0x0",
+					"0xbf7ffffd",
+					"0x80000000",
+					"0xb3bbbd2d"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x43340000",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "1ab64108-e6f2-4682-ade9-e56683dbe4ce",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 40,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": true,
+						"maxHealth": 100,
+						"painCooldown": 1000,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 1
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0xbf7ffff4",
+					"0x80000000",
+					"0x343bbd2b",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0xb43bbd2b",
+					"0x0",
+					"0xbf7ffff4",
+					"0x0",
+					"0x40266666",
+					"0x3dcccccd",
+					"0xc1866667",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Paladin/Paladin.mdl"
+				},
+				"name": "Paladin",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0x40266666",
+					"0x3dcccccd",
+					"0xc1866667"
+				],
+				"quaternion": [
+					"0x0",
+					"0xbf7ffffd",
+					"0x80000000",
+					"0xb3bbbd2d"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x43340000",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "4310162d-a05e-48ef-bb3f-bbbee75b4763",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 40,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": true,
+						"maxHealth": 100,
+						"painCooldown": 1000,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 1
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0xbf7ffff4",
+					"0x80000000",
+					"0x343bbd2b",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0xb43bbd2b",
+					"0x0",
+					"0xbf7ffff4",
+					"0x0",
+					"0x40933333",
+					"0x3dcccccd",
+					"0xc1866667",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Paladin/Paladin.mdl"
+				},
+				"name": "Paladin",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0x40933333",
+					"0x3dcccccd",
+					"0xc1866667"
+				],
+				"quaternion": [
+					"0x0",
+					"0xbf7ffffd",
+					"0x80000000",
+					"0xb3bbbd2d"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x43340000",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "aaa5b848-a793-41de-9357-d2d5c17e613a",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 40,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": true,
+						"maxHealth": 100,
+						"painCooldown": 1000,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 1
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0xbf7ffff4",
+					"0x80000000",
+					"0x343bbd2b",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0xb43bbd2b",
+					"0x0",
+					"0xbf7ffff4",
+					"0x0",
+					"0x40d66666",
+					"0x3dcccccd",
+					"0xc1866667",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Paladin/Paladin.mdl"
+				},
+				"name": "Paladin",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0x40d66666",
+					"0x3dcccccd",
+					"0xc1866667"
+				],
+				"quaternion": [
+					"0x0",
+					"0xbf7ffffd",
+					"0x80000000",
+					"0xb3bbbd2d"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x43340000",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "f54cefd2-9d1d-41a9-bae8-9d6fd55b215c",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 5,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": false,
+						"maxHealth": 100,
+						"painCooldown": 300,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 2
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0xc019999a",
+					"0x3dcccccd",
+					"0x418c0000",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Warrok/Warrok.mdl"
+				},
+				"name": "Warrok",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0xc019999a",
+					"0x3dcccccd",
+					"0x418c0000"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f59999a",
+					"0x3f59999a",
+					"0x3f59999a"
+				],
+				"uuid": "4777a68a-730b-4e45-a63e-843f09589890",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 5,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": false,
+						"maxHealth": 100,
+						"painCooldown": 300,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 2
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x3f333332",
+					"0x3dcccccd",
+					"0x418c0000",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Warrok/Warrok.mdl"
+				},
+				"name": "Warrok",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0x3f333332",
+					"0x3dcccccd",
+					"0x418c0000"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f59999a",
+					"0x3f59999a",
+					"0x3f59999a"
+				],
+				"uuid": "6dcab506-2c91-4fc4-b05f-807516c23cba",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 5,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": false,
+						"maxHealth": 100,
+						"painCooldown": 300,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 2
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x40733334",
+					"0x3dcccccd",
+					"0x418c0000",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Warrok/Warrok.mdl"
+				},
+				"name": "Warrok",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0x40733334",
+					"0x3dcccccd",
+					"0x418c0000"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f59999a",
+					"0x3f59999a",
+					"0x3f59999a"
+				],
+				"uuid": "ac893f56-e14a-4875-9125-2b701b844886",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Unit": {
+						"attackDamage": 30,
+						"attackFrame": 5,
+						"attackName": "Attack",
+						"attackRange": 2,
+						"deathName": "Death",
+						"decayTime": 10000,
+						"enabled": true,
+						"health": 100,
+						"idleName": "Idle",
+						"isFullPlayerControl": false,
+						"isPlayer": false,
+						"maxHealth": 100,
+						"painCooldown": 300,
+						"painName": "Pain",
+						"runName": "Run",
+						"speed": 3,
+						"team": 2
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"mass": 0.0,
+				"matrix": [
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f59999a",
+					"0x0",
+					"0x40ccccce",
+					"0x3dcccccd",
+					"0x418c0000",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Characters/Warrok/Warrok.mdl"
+				},
+				"name": "Warrok",
+				"navobstacle": true,
+				"physicsmode": 1,
+				"pickmode": 1,
+				"position": [
+					"0x40ccccce",
+					"0x3dcccccd",
+					"0x418c0000"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f59999a",
+					"0x3f59999a",
+					"0x3f59999a"
+				],
+				"uuid": "f41f0137-3789-44f4-acc7-08280da330a6",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": false,
+				"collisiontype": 0,
+				"components": {
+					"WayPoint": {
+						"doStayOnPoint": false,
+						"nextPoint": "b411ac92-a919-4717-b9a4-9b1b6f3672a9"
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"group": [
+					"Entities"
+				],
+				"mass": 0.0,
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0xc188cccd",
+					"0x3dccccc0",
+					"0x41600001",
+					"0x3f800000"
+				],
+				"name": "WayPoint1",
+				"navobstacle": false,
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0xc188cccd",
+					"0x3dccccc0",
+					"0x41600001"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "f927509a-d752-443e-98e0-99b08463163a",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": false,
+				"collisiontype": 0,
+				"components": {
+					"WayPoint": {
+						"doStayOnPoint": false,
+						"nextPoint": "f927509a-d752-443e-98e0-99b08463163a"
+					}
+				},
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"elasticity": 0.4000000059604645,
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"group": [
+					"Entities"
+				],
+				"mass": 0.0,
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x41780000",
+					"0x3dccccc0",
+					"0x4161999a",
+					"0x3f800000"
+				],
+				"name": "WayPoint2",
+				"navobstacle": false,
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x41780000",
+					"0x3dccccc0",
+					"0x4161999a"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"renderlayers": 1,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "b411ac92-a919-4717-b9a4-9b1b6f3672a9",
+				"viewrange": 0.0
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 0,
+				"color": [
+					1.0,
+					0.8999999761581421,
+					0.699999988079071,
+					1.0
+				],
+				"damping": [
+					0.10000000149011612,
+					0.10000000149011612
+				],
+				"decallayers": 1,
+				"directionallight": {
+					"range": [
+						-500.0,
+						500.0
+					],
+					"shadowmapsize": 1024
+				},
+				"elasticity": 0.4000000059604645,
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"gravity": true,
+				"matrix": [
+					"0x3f51b3f4",
+					"0x32800000",
+					"0xbf12d5e5",
+					"0x0",
+					"0x3ef08fae",
+					"0x3f12d5ea",
+					"0x3f2bc74d",
+					"0x0",
+					"0x3ea8715a",
+					"0xbf51b3ef",
+					"0x3ef08fb8",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"navobstacle": false,
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0xbee17926",
+					"0xbe8890bd",
+					"0x3e0e2ed1",
+					"0x3f5890a5"
+				],
+				"reflection": true,
+				"renderlayers": 5121,
+				"rotation": [
+					"0x425c0000",
+					"0x420c0000",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "30dfb8d8-aefb-40d2-a7ed-3b208b2de90f",
+				"viewrange": 0.0
+			}
+		],
+		"environment": {
+			"ambientlight": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"diffusereflection": {
+				"path": "Materials/Environment/Default/diffuse.dds"
+			},
+			"fog": false,
+			"fogangle": [
+				0.0,
+				15.0
+			],
+			"fogcolor": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"fogrange": [
+				0.0,
+				1000.0
+			],
+			"gitransmission": 2.0,
+			"iblintensity": 1.0,
+			"skybox": {
+				"path": "Materials/Environment/Default/skybox.dds"
+			},
+			"specularreflection": {
+				"path": "Materials/Environment/Default/specular.dds"
+			},
+			"sunangle": [
+				0.0,
+				0.0
+			],
+			"suncolor": [
+				0.0,
+				0.0,
+				0.0
+			]
+		},
+		"extras": {
+			"viewports": [
+				{
+					"cameraposition": [
+						-5.41129,
+						5.82984,
+						11.9043
+					],
+					"camerarotation": [
+						34.5313,
+						3.15269,
+						0.0
+					],
+					"gridsize": 0,
+					"view": 0,
+					"zoom": 1.42815
+				},
+				{
+					"cameraposition": [
+						7.39667,
+						3.24594e-06,
+						18.1527
+					],
+					"camerarotation": [
+						90.0,
+						0.0,
+						0.0
+					],
+					"gridsize": 0,
+					"view": 3,
+					"zoom": 125.0
+				},
+				{
+					"cameraposition": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"camerarotation": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"gridsize": 0,
+					"view": 5,
+					"zoom": 125.0
+				},
+				{
+					"cameraposition": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"camerarotation": [
+						0.0,
+						90.0,
+						0.0
+					],
+					"gridsize": 0,
+					"view": 1,
+					"zoom": 125.0
+				}
+			]
+		},
+		"groups": [
+			{
+				"id": "2210086398752",
+				"name": "Brushes"
+			},
+			{
+				"id": "2210086387136",
+				"name": "Entities"
+			},
+			{
+				"id": "2210086408432",
+				"name": "Models"
+			}
+		],
+		"navmeshes": [
+			{
+				"agentheight": 2.0,
+				"agentradius": 0.5,
+				"data": 2160,
+				"datasize": 30728,
+				"height": 16.0,
+				"maxslope": 45.0,
+				"position": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"rotation": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"stepheight": 0.5,
+				"tilecount": [
+					5,
+					5
+				],
+				"tileresolution": 32,
+				"voxelsize": 0.25
+			}
+		]
+	}
+} ff AÍÌÌ=   Aff ÁÍÌÌ=   Aff ÁÍÌÌ=   Áff AÍÌÌ=   Áff AÍÌÌ½   Aff ÁÍÌÌ½   Aff ÁÍÌÌ½   Áff AÍÌÌ½   Á                           ff AÍÌÌ=   Á      €?      Ç? €@  €?   €   €   €   €  €¿                    ÍÌLAff ÁÍÌÌ=   Á      €?      Ê¿ €@  €?   €   €   €   €  €¿                    ÍÌLAff AÍÌÌ=   A      €?      Ç?  ‡¿  €?   €   €   €   €  €¿                    ÍÌLAff ÁÍÌÌ=   A      €?      Ê¿  ‡¿  €?   €   €   €   €  €¿                    ÍÌLAff AÍÌÌ½   A      €¿    ÿ¿øÀ À¨À  €¿           €   €  €¿                    
+×#@ff ÁÍÌÌ½   A      €¿    ÿü@ À¨À  €¿           €   €  €¿                    
+×#@ff AÍÌÌ½   Á      €¿    ÿ¿øÀ  %A  €¿           €   €  €¿                    
+×#@ff ÁÍÌÌ½   Á      €¿    ÿü@  %A  €¿           €   €  €¿                    
+×#@ff AÍÌÌ=   A   €      €?ÿ¿øÀ   ½  €¿           €  €¿   €                    
+×#@ff ÁÍÌÌ=   A   €      €?ÿü@   ½  €¿           €  €¿   €                    
+×#@ff AÍÌÌ½   A   €      €?ÿ¿øÀ      €¿           €  €¿   €                    
+×#@ff ÁÍÌÌ½   A   €      €?ÿü@      €¿           €  €¿   €                    
+×#@ff ÁÍÌÌ=   Á   €   €  €¿ÿüÀ   ½  €?           €  €¿   €                    
+×#@ff AÍÌÌ=   Á   €   €  €¿ÿ¿ø@   ½  €?           €  €¿   €                    
+×#@ff ÁÍÌÌ½   Á   €   €  €¿ÿüÀ      €?           €  €¿   €                    
+×#@ff AÍÌÌ½   Á   €   €  €¿ÿ¿ø@      €?           €  €¿   €                    
+×#@ff ÁÍÌÌ=   A  €¿         À¨À   ½          €¿   €  €¿   €                    
+×#@ff ÁÍÌÌ=   Á  €¿          %A   ½          €¿   €  €¿   €                    
+×#@ff ÁÍÌÌ½   A  €¿         À¨À              €¿   €  €¿   €                    
+×#@ff ÁÍÌÌ½   Á  €¿          %A              €¿   €  €¿   €                    
+×#@ff AÍÌÌ½   A  €?         À¨@       €   €  €?   €  €¿   €                    
+×#@ff AÍÌÌ½   Á  €?          %Á       €   €  €?   €  €¿   €                    
+×#@ff AÍÌÌ=   A  €?         À¨@   ½   €   €  €?   €  €¿   €                    
+×#@ff AÍÌÌ=   Á  €?          %Á   ½   €   €  €?   €  €¿   €                    
+×#@                         
+      	                                           
+      `      `            ð            €            "      `      p)             /      x      x1      x      ð3      x      h6            ø;            ˆA      x       D      x      xF      x      ðH            €N            T      x      ˆV      x       Y      x      x[            a      `      hh            øm            ˆs            y      `            $     œÁš™	?  ŒÁ  ŽÁš™	?  šÁ  ŽÁš™	?  šÁ  œÁš™	?  ŒÁ  œÁš™	?  |Á  ŽÁš™	?  šÁ  ŽÁš™	?  šÁ  œÁš™	?  |Á  œÁš™	?  `Á  |Áš™	?  šÁ  |Áš™	?  šÁ  œÁš™	?  `Á  @Áš™	?  @Á  `Áš™	?  šÁ  `Áš™	?  šÁ  @Áš™	?  @Á  ŽÁš™	?  šÁ  œÁš™	?  šÁ  œÁš™	?  šÁ  œÁš™	?  ŒÁ  œÁš™	?  ŒÁ  œÁš™	?  |Á  |Áš™	?  šÁ  ŽÁš™	?  šÁ  œÁš™	?  |Á  œÁš™	?  `Á  `Áš™	?  šÁ  |Áš™	?  šÁ  œÁš™	?  `Á  œÁš™	?  @Á  œÁš™	?  @Á  @Áš™	?  @Á  @Áš™	?  @Á  @Áš™	?  šÁ  @Áš™	?  šÁ  `Áš™	?  šÁ$                               	   
+                                                                      !   "   #           ŽÁ  à>  šÁ  œÁ  à>  šÁ  œÁ  à>  ŒÁ  ŽÁ  à>  šÁ  œÁ  à>  ŒÁ  œÁ  à>  |Á  |Á  à>  šÁ  ŽÁ  à>  šÁ  œÁ  à>  |Á  |Á  à>  šÁ  œÁ  à>  |Á  œÁ  à>  `Á  `Á  à>  šÁ  |Á  à>  šÁ  œÁ  à>  `Á  `Á  à>  šÁ  œÁ  à>  `Á  œÁ  à>  @Á  `Á  à>  šÁ  œÁ  à>  @Á  @Á  à>  @Á  @Á  à>  @Á  @Á  à>  šÁ  `Á  à>  šÁ                               	   
+                                          €  VAND                      
+                
+            €A   ?   ?   Á   Á   Á  @Á   A  @Á  €@  œÁ   >  @Á  @Á   >  @Á  @Á   >  šÁ  `Á   >  šÁ  |Á   >  šÁ  ŽÁ   >  šÁ  œÁ   >  šÁ  œÁ   >  ŒÁ  œÁ   >  |Á  œÁ   >  `Á                         ?                       ?      	                ?     	           €    ?	             €          ? @ ÿÿÿÿÿ   @ ÿÿÿÿÿ    @     ÿ   @ ÿÿÿÿÿ   @    ÿ   @ ÿÿÿÿÿ   @    ÿ   @ ÿÿÿÿÿ    B     ÿ J       ÿ                                                                                                                             ÿÿÿÿ                                                                         ÷ÿÿÿ        ýÿÿÿ               	                 ûÿÿÿ    	   
+               ýÿÿÿ                                                     œÁš™	?   Á  @Áš™	?  @Á  @Áš™	?  €À  œÁš™	?  ÀÀ  @Áš™	?  @Á  œÁš™	?   Á  œÁš™	?   Á  @Áš™	?  €À  @Áš™	?  €À  œÁš™	?   Á  œÁš™	?  ÀÀ  @Áš™	?  €À  @Áš™	?  @Á  œÁš™	?  @Á  œÁš™	?  @Á  œÁš™	?   Á  œÁš™	?  ÀÀ  œÁš™	?  €À  œÁš™	?  €À  @Áš™	?  €À  œÁš™	?   Á  œÁš™	?   Á  @Áš™	?  €À  @Áš™	?  @Á  œÁš™	?   Á  œÁš™	?  ÀÀ                               	   
+                                                        @Á  à>  @Á  œÁ  à>  @Á  œÁ  à>   Á  œÁ  à>  ÀÀ  œÁ  à>  €À  @Á  à>  €À  @Á  à>  @Á  œÁ  à>   Á  œÁ  à>   Á  @Á  à>  @Á  œÁ  à>   Á  @Á  à>  €À  @Á  à>  €À  œÁ  à>   Á  œÁ  à>  ÀÀ                               	   
+               à  VAND                                                 €A   ?   ?   Á   Á  @Á  @Á   A  €À  €@  œÁ   >  €À  @Á   >  €À  @Á   >  @Á  œÁ   >  @Á  œÁ   >   Á  œÁ   >   Á  œÁ   >  ÀÀ            €          ?               €        ?                €     ?                       ? B ÿÿÿÿÿ   B ÿÿÿÿÿ   B ÿÿÿÿÿ    B     ÿ   B ÿÿÿÿÿ   B     ÿ   @       ÿ  D     ÿ  L      ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                     œÁš™	?   À  @Áš™	?  €À  @Áš™	?  €@  œÁš™	?   @  @Áš™	?  €À  œÁš™	?   À  œÁš™	?      @Áš™	?  €@  @Áš™	?  €@  œÁš™	?      œÁš™	?   @  @Áš™	?  €@  @Áš™	?  €À  œÁš™	?  €À  œÁš™	?  €À  œÁš™	?   À  œÁš™	?   @  œÁš™	?  €@  œÁš™	?  €@  @Áš™	?  €@  œÁš™	?   À  œÁš™	?      @Áš™	?  €@  @Áš™	?  €À  œÁš™	?      œÁš™	?   @                               	   
+                                                        @Á  à>  €À  œÁ  à>  €À  œÁ  à>   À  œÁ  à>   @  œÁ  à>  €@  @Á  à>  €@  @Á  à>  €À  œÁ  à>   À  œÁ  à>      @Á  à>  €À  œÁ  à>      @Á  à>  €@  @Á  à>  €@  œÁ  à>      œÁ  à>   @                               	   
+               à  VAND                                                 €A   ?   ?   Á   Á  €À  @Á   A  €@  €@  œÁ   >  €@  @Á   >  €@  @Á   >  €À  œÁ   >  €À  œÁ   >   À  œÁ   >      œÁ   >   @            €          ?               €        ?                €     ?                       ? D ÿÿÿÿÿ   D ÿÿÿÿÿ   D ÿÿÿÿÿ    D     ÿ   D ÿÿÿÿÿ   D     ÿ   B       ÿ  F     ÿ  N      ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                     œÁš™	?  À@  @Áš™	?  €@  @Áš™	?  @A  œÁš™	?   A  @Áš™	?  €@  œÁš™	?  À@  œÁš™	?   A  @Áš™	?  @A  @Áš™	?  @A  œÁš™	?   A  œÁš™	?   A  @Áš™	?  @A  @Áš™	?  €@  œÁš™	?  €@  œÁš™	?  €@  œÁš™	?  À@  œÁš™	?   A  œÁš™	?  @A  œÁš™	?  @A  @Áš™	?  @A  œÁš™	?  À@  œÁš™	?   A  @Áš™	?  @A  @Áš™	?  €@  œÁš™	?   A  œÁš™	?   A                               	   
+                                                        @Á  à>  €@  œÁ  à>  €@  œÁ  à>  À@  œÁ  à>   A  œÁ  à>  @A  @Á  à>  @A  @Á  à>  €@  œÁ  à>  À@  œÁ  à>   A  @Á  à>  €@  œÁ  à>   A  @Á  à>  @A  @Á  à>  @A  œÁ  à>   A  œÁ  à>   A                               	   
+               à  VAND                                                 €A   ?   ?   Á   Á  €@  @Á   A  @A  €@  œÁ   >  @A  @Á   >  @A  @Á   >  €@  œÁ   >  €@  œÁ   >  À@  œÁ   >   A  œÁ   >   A            €          ?               €        ?                €     ?                       ? F ÿÿÿÿÿ   F ÿÿÿÿÿ   F ÿÿÿÿÿ    F     ÿ   F ÿÿÿÿÿ   F     ÿ   D       ÿ H     ÿ  P      ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                $     ŽÁš™	?  œA  œÁš™	?  ŒA  œÁš™	?  ŒA  ŽÁš™	?  œA  |Áš™	?  œA  œÁš™	?  |A  @Áš™	?  @A  œÁš™	?  \A  œÁš™	?  |A  `Áš™	?  œA  œÁš™	?  |A  |Áš™	?  œA  `Áš™	?  œA  œÁš™	?  |A  œÁš™	?  \A  @Áš™	?  @A  œÁš™	?  ŒA  œÁš™	?  œA  œÁš™	?  œA  ŽÁš™	?  œA  œÁš™	?  |A  œÁš™	?  ŒA  ŽÁš™	?  œA  |Áš™	?  œA  `Áš™	?  œA  @Áš™	?  œA  @Áš™	?  œA  @Áš™	?  @A  œÁš™	?  \A  œÁš™	?  |A  |Áš™	?  œA  `Áš™	?  œA  @Áš™	?  @A  œÁš™	?  @A  œÁš™	?  @A  œÁš™	?  \A$                               	   
+                                                                      !   "   #           œÁ  à>  ŒA  œÁ  à>  œA  ŽÁ  à>  œA  œÁ  à>  |A  œÁ  à>  ŒA  ŽÁ  à>  œA  œÁ  à>  |A  ŽÁ  à>  œA  |Á  à>  œA  `Á  à>  œA  @Á  à>  œA  @Á  à>  @A  `Á  à>  œA  @Á  à>  @A  œÁ  à>  \A  `Á  à>  œA  œÁ  à>  \A  œÁ  à>  |A  œÁ  à>  |A  |Á  à>  œA  `Á  à>  œA  @Á  à>  @A  œÁ  à>  @A  œÁ  à>  \A                               	   
+                                          €  VAND                     
+                
+            €A   ?   ?   Á   Á  @A  @Á   A   A  €@  @Á   >  œA  @Á   >  @A  œÁ   >  @A  œÁ   >  \A  œÁ   >  |A  œÁ   >  ŒA  œÁ   >  œA  ŽÁ   >  œA  |Á   >  œA  `Á   >  œA                         ?                      ?	   	           €       ?     	                  ?            €          ? H ÿÿÿÿÿ   H ÿÿÿÿÿ    H    ÿ   H ÿÿÿÿÿ   H    ÿ   H ÿÿÿÿÿ   H     ÿ   H ÿÿÿÿÿ   F      ÿ R      ÿ                                                                                                                             ÿÿÿÿ                                                                        ÷ÿÿÿ          ýÿÿÿ                                  ûÿÿÿ                     ýÿÿÿ               	                                   ÀÀš™	?  šÁ  €Àš™	?  @Á  @Áš™	?  @Á   Áš™	?  šÁ  €Àš™	?  @Á  ÀÀš™	?  šÁ   Áš™	?  šÁ  @Áš™	?  @Á  @Áš™	?  @Á   Áš™	?  šÁ   Áš™	?  šÁ  @Áš™	?  @Á  €Àš™	?  @Á  €Àš™	?  šÁ  €Àš™	?  šÁ  ÀÀš™	?  šÁ   Áš™	?  šÁ  @Áš™	?  šÁ  @Áš™	?  šÁ  @Áš™	?  @Á  ÀÀš™	?  šÁ   Áš™	?  šÁ  @Áš™	?  @Á  €Àš™	?  @Á   Áš™	?  šÁ   Áš™	?  šÁ                               	   
+                                                        €À  à>  @Á  €À  à>  šÁ  ÀÀ  à>  šÁ   Á  à>  šÁ  @Á  à>  šÁ  @Á  à>  @Á  €À  à>  @Á  ÀÀ  à>  šÁ   Á  à>  šÁ  €À  à>  @Á   Á  à>  šÁ  @Á  à>  @Á  @Á  à>  @Á   Á  à>  šÁ   Á  à>  šÁ                               	   
+               à  VAND                                                 €A   ?   ?  @Á   Á   Á  €À   A  @Á  €@  @Á   >  @Á  €À   >  @Á  €À   >  šÁ  ÀÀ   >  šÁ   Á   >  šÁ   Á   >  šÁ  @Á   >  šÁ             €          ?               €        ?                €     ?                        ? J ÿÿÿÿÿ   J ÿÿÿÿÿ   J ÿÿÿÿÿ    J     ÿ   J ÿÿÿÿÿ   J     ÿ   @     ÿ  L     ÿ T        ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                      @Áš™	?  €À  €Àš™	?  €À  €Àš™	?  €À  €Àš™	?  @Á  €Àš™	?  @Á  @Áš™	?  @Á  @Áš™	?  @Á  @Áš™	?  €À                                    @Á  à>  €À  €À  à>  €À  €À  à>  @Á  @Á  à>  €À  €À  à>  @Á  @Á  à>  @Á                      x  VAND                                                €A   ?   ?  @Á   Á  @Á  €À   A  €À  €@  @Á   >  €À  €À   >  €À  €À   >  @Á  @Á   >  @Á            € €€€     ? B ÿÿÿÿ ÿ J      ÿ  N      ÿ  V      ÿ                                                	           
+                      ÿÿÿÿ                                                            @Áš™	?  €@  €Àš™	?  €@  €Àš™	?  €@  €Àš™	?  €À  €Àš™	?  €À  @Áš™	?  €À  @Áš™	?  €À  @Áš™	?  €@                                    @Á  à>  €@  €À  à>  €@  €À  à>  €À  @Á  à>  €@  €À  à>  €À  @Á  à>  €À                      x  VAND                                                €A   ?   ?  @Á   Á  €À  €À   A  €@  €@  @Á   >  €@  €À   >  €@  €À   >  €À  @Á   >  €À            € €€€     ? D ÿÿÿÿ ÿ  L      ÿ  P      ÿ  X      ÿ                                                	           
+                      ÿÿÿÿ                                                            @Áš™	?  @A  €Àš™	?  @A  €Àš™	?  @A  €Àš™	?  €@  €Àš™	?  €@  @Áš™	?  €@  @Áš™	?  €@  @Áš™	?  @A                                    @Á  à>  @A  €À  à>  @A  €À  à>  €@  @Á  à>  @A  €À  à>  €@  @Á  à>  €@                      x  VAND                                                €A   ?   ?  @Á   Á  €@  €À   A  @A  €@  @Á   >  @A  €À   >  @A  €À   >  €@  @Á   >  €@            € €€€     ? F ÿÿÿÿ ÿ  N      ÿ R      ÿ  Z      ÿ                                                	           
+                      ÿÿÿÿ                                                            €Àš™	?  @A  ÀÀš™	?  œA   Áš™	?  œA  @Áš™	?  @A  ÀÀš™	?  œA  €Àš™	?  @A  @Áš™	?  @A   Áš™	?  œA   Áš™	?  œA  @Áš™	?  @A  @Áš™	?  @A   Áš™	?  œA  ÀÀš™	?  œA  €Àš™	?  œA  €Àš™	?  œA  €Àš™	?  @A  @Áš™	?  @A  @Áš™	?  œA  @Áš™	?  œA   Áš™	?  œA   Áš™	?  œA  ÀÀš™	?  œA  €Àš™	?  @A  @Áš™	?  @A   Áš™	?  œA   Áš™	?  œA                               	   
+                                                        ÀÀ  à>  œA  €À  à>  œA  €À  à>  @A  @Á  à>  @A  @Á  à>  œA   Á  à>  œA   Á  à>  œA  ÀÀ  à>  œA  €À  à>  @A   Á  à>  œA  €À  à>  @A  @Á  à>  @A   Á  à>  œA   Á  à>  œA  @Á  à>  @A                               	   
+               à  VAND                                                €A   ?   ?  @Á   Á  @A  €À   A   A  €@  @Á   >  œA   Á   >  œA   Á   >  œA  ÀÀ   >  œA  €À   >  œA  €À   >  @A  @Á   >  @A               €        ?             €          ?              €      ?                       ? R ÿÿÿÿÿ   R ÿÿÿÿÿ   R ÿÿÿÿÿ    R    ÿ   R ÿÿÿÿÿ   R    ÿ   H      ÿ  P     ÿ \       ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                       @š™	?  šÁ  €@š™	?  @Á  €Àš™	?  @Á   Àš™	?  šÁ  €@š™	?  @Á   @š™	?  šÁ    š™	?  šÁ  €Àš™	?  @Á  €Àš™	?  @Á    š™	?  šÁ   Àš™	?  šÁ  €Àš™	?  @Á  €@š™	?  @Á  €@š™	?  šÁ  €@š™	?  šÁ   @š™	?  šÁ   Àš™	?  šÁ  €Àš™	?  šÁ  €Àš™	?  šÁ  €Àš™	?  @Á   @š™	?  šÁ    š™	?  šÁ  €Àš™	?  @Á  €@š™	?  @Á    š™	?  šÁ   Àš™	?  šÁ                               	   
+                                                        €@  à>  @Á  €@  à>  šÁ   @  à>  šÁ   À  à>  šÁ  €À  à>  šÁ  €À  à>  @Á  €@  à>  @Á   @  à>  šÁ      à>  šÁ  €@  à>  @Á      à>  šÁ  €À  à>  @Á  €À  à>  @Á      à>  šÁ   À  à>  šÁ                               	   
+               à  VAND                                                 €A   ?   ?  €À   Á   Á  €@   A  @Á  €@  €À   >  @Á  €@   >  @Á  €@   >  šÁ   @   >  šÁ       >  šÁ   À   >  šÁ  €À   >  šÁ             €          ?               €        ?                €     ?                        ? T ÿÿÿÿÿ   T ÿÿÿÿÿ   T ÿÿÿÿÿ    T     ÿ   T ÿÿÿÿÿ   T     ÿ    J     ÿ  V     ÿ ^        ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                      €Àš™	?  €À  €@š™	?  €À  €@š™	?  €À  €@š™	?  @Á  €@š™	?  @Á  €Àš™	?  @Á  €Àš™	?  @Á  €Àš™	?  €À                                    €À  à>  €À  €@  à>  €À  €@  à>  @Á  €À  à>  €À  €@  à>  @Á  €À  à>  @Á                      x  VAND                                                €A   ?   ?  €À   Á  @Á  €@   A  €À  €@  €À   >  €À  €@   >  €À  €@   >  @Á  €À   >  @Á            € €€€     ?  L ÿÿÿÿ ÿ T      ÿ  X      ÿ  `      ÿ                                                	           
+                      ÿÿÿÿ                                                            €Àš™	?  €@  €@š™	?  €@  €@š™	?  €@  €@š™	?  €À  €@š™	?  €À  €Àš™	?  €À  €Àš™	?  €À  €Àš™	?  €@                                    €À  à>  €@  €@  à>  €@  €@  à>  €À  €À  à>  €@  €@  à>  €À  €À  à>  €À                      x  VAND                                                €A   ?   ?  €À   Á  €À  €@   A  €@  €@  €À   >  €@  €@   >  €@  €@   >  €À  €À   >  €À            € €€€     ?  N ÿÿÿÿ ÿ  V      ÿ  Z      ÿ  b      ÿ                                                	           
+                      ÿÿÿÿ                                                            €Àš™	?  @A  €@š™	?  @A  €@š™	?  @A  €@š™	?  €@  €@š™	?  €@  €Àš™	?  €@  €Àš™	?  €@  €Àš™	?  @A                                    €À  à>  @A  €@  à>  @A  €@  à>  €@  €À  à>  @A  €@  à>  €@  €À  à>  €@                      x  VAND                                                €A   ?   ?  €À   Á  €@  €@   A  @A  €@  €À   >  @A  €@   >  @A  €@   >  €@  €À   >  €@            € €€€     ?  P ÿÿÿÿ ÿ  X      ÿ \      ÿ  d      ÿ                                                	           
+                      ÿÿÿÿ                                                            €@š™	?  @A   @š™	?  œA   Àš™	?  œA  €Àš™	?  @A   @š™	?  œA  €@š™	?  @A  €Àš™	?  @A    š™	?  œA    š™	?  œA  €Àš™	?  @A  €Àš™	?  @A   Àš™	?  œA   @š™	?  œA  €@š™	?  œA  €@š™	?  œA  €@š™	?  @A  €Àš™	?  @A  €Àš™	?  œA  €Àš™	?  œA   Àš™	?  œA    š™	?  œA   @š™	?  œA  €@š™	?  @A  €Àš™	?  @A   Àš™	?  œA    š™	?  œA                               	   
+                                                         @  à>  œA  €@  à>  œA  €@  à>  @A  €À  à>  @A  €À  à>  œA   À  à>  œA      à>  œA   @  à>  œA  €@  à>  @A      à>  œA  €@  à>  @A  €À  à>  @A   À  à>  œA      à>  œA  €À  à>  @A                               	   
+               à  VAND                                                €A   ?   ?  €À   Á  @A  €@   A   A  €@  €À   >  œA   À   >  œA       >  œA   @   >  œA  €@   >  œA  €@   >  @A  €À   >  @A               €        ?             €          ?              €      ?                       ? \ ÿÿÿÿÿ   \ ÿÿÿÿÿ   \ ÿÿÿÿÿ    \    ÿ   \ ÿÿÿÿÿ   \    ÿ    R      ÿ  Z     ÿ f       ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                       Aš™	?  šÁ  @Aš™	?  @Á  €@š™	?  @Á  À@š™	?  šÁ  @Aš™	?  @Á   Aš™	?  šÁ   Aš™	?  šÁ  €@š™	?  @Á  €@š™	?  @Á   Aš™	?  šÁ  À@š™	?  šÁ  €@š™	?  @Á  @Aš™	?  @Á  @Aš™	?  šÁ  @Aš™	?  šÁ   Aš™	?  šÁ  À@š™	?  šÁ  €@š™	?  šÁ  €@š™	?  šÁ  €@š™	?  @Á   Aš™	?  šÁ   Aš™	?  šÁ  €@š™	?  @Á  @Aš™	?  @Á   Aš™	?  šÁ  À@š™	?  šÁ                               	   
+                                                        @A  à>  @Á  @A  à>  šÁ   A  à>  šÁ  À@  à>  šÁ  €@  à>  šÁ  €@  à>  @Á  @A  à>  @Á   A  à>  šÁ   A  à>  šÁ  @A  à>  @Á   A  à>  šÁ  €@  à>  @Á  €@  à>  @Á   A  à>  šÁ  À@  à>  šÁ                               	   
+               à  VAND                                                 €A   ?   ?  €@   Á   Á  @A   A  @Á  €@  €@   >  @Á  @A   >  @Á  @A   >  šÁ   A   >  šÁ   A   >  šÁ  À@   >  šÁ  €@   >  šÁ             €          ?               €        ?                €     ?                        ? ^ ÿÿÿÿÿ   ^ ÿÿÿÿÿ   ^ ÿÿÿÿÿ    ^     ÿ   ^ ÿÿÿÿÿ   ^     ÿ    T     ÿ  `     ÿ h        ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                      €@š™	?  €À  @Aš™	?  €À  @Aš™	?  €À  @Aš™	?  @Á  @Aš™	?  @Á  €@š™	?  @Á  €@š™	?  @Á  €@š™	?  €À                                    €@  à>  €À  @A  à>  €À  @A  à>  @Á  €@  à>  €À  @A  à>  @Á  €@  à>  @Á                      x  VAND                                                €A   ?   ?  €@   Á  @Á  @A   A  €À  €@  €@   >  €À  @A   >  €À  @A   >  @Á  €@   >  @Á            € €€€     ?  V ÿÿÿÿ ÿ ^      ÿ  b      ÿ j      ÿ                                                	           
+                      ÿÿÿÿ                                                            €@š™	?  €@  @Aš™	?  €@  @Aš™	?  €@  @Aš™	?  €À  @Aš™	?  €À  €@š™	?  €À  €@š™	?  €À  €@š™	?  €@                                    €@  à>  €@  @A  à>  €@  @A  à>  €À  €@  à>  €@  @A  à>  €À  €@  à>  €À                      x  VAND                                                €A   ?   ?  €@   Á  €À  @A   A  €@  €@  €@   >  €@  @A   >  €@  @A   >  €À  €@   >  €À            € €€€     ?  X ÿÿÿÿ ÿ  `      ÿ  d      ÿ l      ÿ                                                	           
+                      ÿÿÿÿ                                                            €@š™	?  @A  @Aš™	?  @A  @Aš™	?  @A  @Aš™	?  €@  @Aš™	?  €@  €@š™	?  €@  €@š™	?  €@  €@š™	?  @A                                    €@  à>  @A  @A  à>  @A  @A  à>  €@  €@  à>  @A  @A  à>  €@  €@  à>  €@                      x  VAND                                                €A   ?   ?  €@   Á  €@  @A   A  @A  €@  €@   >  @A  @A   >  @A  @A   >  €@  €@   >  €@            € €€€     ?  Z ÿÿÿÿ ÿ  b      ÿ f      ÿ n      ÿ                                                	           
+                      ÿÿÿÿ                                                            @Aš™	?  @A   Aš™	?  œA  À@š™	?  œA  €@š™	?  @A   Aš™	?  œA  @Aš™	?  @A  €@š™	?  @A   Aš™	?  œA   Aš™	?  œA  €@š™	?  @A  €@š™	?  @A  À@š™	?  œA   Aš™	?  œA  @Aš™	?  œA  @Aš™	?  œA  @Aš™	?  @A  €@š™	?  @A  €@š™	?  œA  €@š™	?  œA  À@š™	?  œA   Aš™	?  œA   Aš™	?  œA  @Aš™	?  @A  €@š™	?  @A  À@š™	?  œA   Aš™	?  œA                               	   
+                                                         A  à>  œA  @A  à>  œA  @A  à>  @A  €@  à>  @A  €@  à>  œA  À@  à>  œA   A  à>  œA   A  à>  œA  @A  à>  @A   A  à>  œA  @A  à>  @A  €@  à>  @A  À@  à>  œA   A  à>  œA  €@  à>  @A                               	   
+               à  VAND                                                €A   ?   ?  €@   Á  @A  @A   A   A  €@  €@   >  œA  À@   >  œA   A   >  œA   A   >  œA  @A   >  œA  @A   >  @A  €@   >  @A               €        ?             €          ?              €      ?                       ? f ÿÿÿÿÿ   f ÿÿÿÿÿ   f ÿÿÿÿÿ    f    ÿ   f ÿÿÿÿÿ   f    ÿ    \      ÿ  d     ÿ p       ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                 $     ŒAš™	?  šÁ  œAš™	?  ŒÁ  œAš™	?  ŒÁ  ŒAš™	?  šÁ  ŒAš™	?  šÁ  œAš™	?  |Á  œAš™	?  |Á  ŒAš™	?  šÁ  |Aš™	?  šÁ  œAš™	?  `Á  œAš™	?  `Á  |Aš™	?  šÁ  \Aš™	?  šÁ  @Aš™	?  @Á  @Aš™	?  @Á  \Aš™	?  šÁ  œAš™	?  ŒÁ  œAš™	?  šÁ  œAš™	?  šÁ  ŒAš™	?  šÁ  œAš™	?  |Á  œAš™	?  ŒÁ  ŒAš™	?  šÁ  |Aš™	?  šÁ  œAš™	?  `Á  œAš™	?  |Á  @Aš™	?  @Á  œAš™	?  @Á  œAš™	?  @Á  œAš™	?  `Á  |Aš™	?  šÁ  \Aš™	?  šÁ  \Aš™	?  šÁ  @Aš™	?  šÁ  @Aš™	?  šÁ  @Aš™	?  @Á$                               	   
+                                                                      !   "   #           œA  à>  ŒÁ  œA  à>  šÁ  ŒA  à>  šÁ  œA  à>  |Á  œA  à>  ŒÁ  ŒA  à>  šÁ  œA  à>  |Á  ŒA  à>  šÁ  |A  à>  šÁ  œA  à>  |Á  |A  à>  šÁ  œA  à>  `Á  @A  à>  @Á  œA  à>  @Á  œA  à>  `Á  @A  à>  @Á  œA  à>  `Á  |A  à>  šÁ  @A  à>  @Á  |A  à>  šÁ  \A  à>  šÁ  \A  à>  šÁ  @A  à>  šÁ  @A  à>  @Á                               	   
+                                          €  VAND                     
+                
+            €A   ?   ?  @A   Á   Á   A   A  @Á  €@  @A   >  @Á  œA   >  @Á  œA   >  `Á  œA   >  |Á  œA   >  ŒÁ  œA   >  šÁ  ŒA   >  šÁ  |A   >  šÁ  \A   >  šÁ  @A   >  šÁ                         ?                       ?                      ?	           €         ?    	           €        ? h ÿÿÿÿÿ   h ÿÿÿÿÿ    h    ÿ   h ÿÿÿÿÿ   h     ÿ   h ÿÿÿÿÿ   h    ÿ   h ÿÿÿÿÿ    ^     ÿ j      ÿ                                                                                                                             ÿÿÿÿ                                                                       ÷ÿÿÿ          ýÿÿÿ                                  ûÿÿÿ                   ýÿÿÿ                  
+                                œAš™	?  ÀÀ  @Aš™	?  €À  @Aš™	?  @Á  œAš™	?   Á  @Aš™	?  €À  œAš™	?  ÀÀ  œAš™	?   Á  @Aš™	?  @Á  œAš™	?   Á  @Aš™	?  @Á  @Aš™	?  @Á  œAš™	?   Á  @Aš™	?  €À  œAš™	?  €À  œAš™	?  €À  œAš™	?  ÀÀ  œAš™	?   Á  œAš™	?  @Á  œAš™	?  @Á  @Aš™	?  @Á  œAš™	?  ÀÀ  œAš™	?   Á  @Aš™	?  @Á  @Aš™	?  €À  œAš™	?   Á  œAš™	?   Á                               	   
+                                                        @A  à>  €À  œA  à>  €À  œA  à>  ÀÀ  œA  à>   Á  œA  à>  @Á  @A  à>  @Á  @A  à>  €À  œA  à>  ÀÀ  œA  à>   Á  @A  à>  €À  œA  à>   Á  @A  à>  @Á  œA  à>   Á  œA  à>   Á  @A  à>  @Á                               	   
+               à  VAND                                                €A   ?   ?  @A   Á  @Á   A   A  €À  €@  @A   >  €À  œA   >  €À  œA   >  ÀÀ  œA   >   Á  œA   >   Á  œA   >  @Á  @A   >  @Á             €          ?              €        ?                €     ?                       ? j ÿÿÿÿÿ   j ÿÿÿÿÿ   j ÿÿÿÿÿ    j     ÿ   j ÿÿÿÿÿ   j    ÿ    `     ÿ h     ÿ l       ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                      œAš™	?   @  @Aš™	?  €@  @Aš™	?  €À  œAš™	?   À  @Aš™	?  €@  œAš™	?   @  œAš™	?      @Aš™	?  €À  œAš™	?   À  @Aš™	?  €À  @Aš™	?  €À  œAš™	?      @Aš™	?  €@  œAš™	?  €@  œAš™	?  €@  œAš™	?   @  œAš™	?   À  œAš™	?  €À  œAš™	?  €À  @Aš™	?  €À  œAš™	?   @  œAš™	?      @Aš™	?  €À  @Aš™	?  €@  œAš™	?      œAš™	?   À                               	   
+                                                        @A  à>  €@  œA  à>  €@  œA  à>   @  œA  à>   À  œA  à>  €À  @A  à>  €À  @A  à>  €@  œA  à>   @  œA  à>      @A  à>  €@  œA  à>      @A  à>  €À  œA  à>      œA  à>   À  @A  à>  €À                               	   
+               à  VAND                                                €A   ?   ?  @A   Á  €À   A   A  €@  €@  @A   >  €@  œA   >  €@  œA   >   @  œA   >      œA   >   À  œA   >  €À  @A   >  €À             €          ?              €        ?                €     ?                       ? l ÿÿÿÿÿ   l ÿÿÿÿÿ   l ÿÿÿÿÿ    l     ÿ   l ÿÿÿÿÿ   l    ÿ    b     ÿ  j     ÿ n       ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                      œAš™	?   A  @Aš™	?  @A  @Aš™	?  €@  œAš™	?  À@  @Aš™	?  @A  œAš™	?   A  œAš™	?   A  @Aš™	?  €@  œAš™	?  À@  @Aš™	?  €@  @Aš™	?  €@  œAš™	?   A  @Aš™	?  @A  œAš™	?  @A  œAš™	?  @A  œAš™	?   A  œAš™	?  À@  œAš™	?  €@  œAš™	?  €@  @Aš™	?  €@  œAš™	?   A  œAš™	?   A  @Aš™	?  €@  @Aš™	?  @A  œAš™	?   A  œAš™	?  À@                               	   
+                                                        @A  à>  @A  œA  à>  @A  œA  à>   A  œA  à>  À@  œA  à>  €@  @A  à>  €@  @A  à>  @A  œA  à>   A  œA  à>   A  @A  à>  @A  œA  à>   A  @A  à>  €@  œA  à>   A  œA  à>  À@  @A  à>  €@                               	   
+               à  VAND                                                €A   ?   ?  @A   Á  €@   A   A  @A  €@  @A   >  @A  œA   >  @A  œA   >   A  œA   >   A  œA   >  À@  œA   >  €@  @A   >  €@             €          ?              €        ?                €     ?                       ? n ÿÿÿÿÿ   n ÿÿÿÿÿ   n ÿÿÿÿÿ    n     ÿ   n ÿÿÿÿÿ   n    ÿ    d     ÿ  l     ÿ p       ÿ    
+                                                                                                   ÿÿÿÿ                                                             ùÿÿÿ           ýÿÿÿ                                      ýÿÿÿ                                                 $     œAš™	?  ŒA  ŒAš™	?  œA  ŒAš™	?  œA  œAš™	?  ŒA  œAš™	?  ŒA  |Aš™	?  œA  |Aš™	?  œA  œAš™	?  ŒA  œAš™	?  |A  \Aš™	?  œA  \Aš™	?  œA  œAš™	?  |A  œAš™	?  \A  @Aš™	?  @A  @Aš™	?  @A  œAš™	?  \A  ŒAš™	?  œA  œAš™	?  œA  œAš™	?  œA  œAš™	?  ŒA  |Aš™	?  œA  ŒAš™	?  œA  œAš™	?  ŒA  œAš™	?  |A  \Aš™	?  œA  |Aš™	?  œA  @Aš™	?  @A  @Aš™	?  œA  @Aš™	?  œA  \Aš™	?  œA  œAš™	?  |A  œAš™	?  \A  œAš™	?  \A  œAš™	?  @A  œAš™	?  @A  @Aš™	?  @A$                               	   
+                                                                      !   "   #           ŒA  à>  œA  œA  à>  œA  œA  à>  ŒA  |A  à>  œA  ŒA  à>  œA  œA  à>  ŒA  |A  à>  œA  œA  à>  ŒA  œA  à>  |A  |A  à>  œA  œA  à>  |A  \A  à>  œA  @A  à>  @A  @A  à>  œA  \A  à>  œA  @A  à>  @A  \A  à>  œA  œA  à>  |A  @A  à>  @A  œA  à>  |A  œA  à>  \A  œA  à>  \A  œA  à>  @A  @A  à>  @A                               	   
+                                          €  VAND                    
+                
+            €A   ?   ?  @A   Á  @A   A   A   A  €@  @A   >  œA  \A   >  œA  |A   >  œA  ŒA   >  œA  œA   >  œA  œA   >  ŒA  œA   >  |A  œA   >  \A  œA   >  @A  @A   >  @A                         ?                       ?                      ?   	        €         ?	     	         €        ? p ÿÿÿÿÿ   p ÿÿÿÿÿ    p    ÿ   p ÿÿÿÿÿ   p     ÿ   p ÿÿÿÿÿ   p    ÿ   p ÿÿÿÿÿ    f      ÿ  n     ÿ                                                                                                                             ÿÿÿÿ                                                                         ÷ÿÿÿ          ýÿÿÿ                                  ûÿÿÿ                   ýÿÿÿ                                       

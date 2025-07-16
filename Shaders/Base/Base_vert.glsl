@@ -371,6 +371,24 @@ void main()
 	//out_meshtexturescale = MeshTextureScale * length(mat[0].xyz);
 #endif
 
+	//-------------------------------------------------------
+	// Wind animation
+	//-------------------------------------------------------
+	
+	if ((meshflags & MESHFLAGS_WIND) != 0)
+	{
+		#if defined (WRITE_COLOR) || defined(TESSELLATION)
+		#else
+			vec3 normal, tangent, bitangent;
+			ExtractVertexNormalTangentBitangent(normal, tangent, bitangent);
+		#endif
+		float seed = mod(CurrentTime * 0.0015f, 360.0f);
+		seed += mat[3].x * 33.0f + mat[3].y * 67.8f + mat[3].z * 123.5f;
+		seed += VertexPosition.x + VertexPosition.y + VertexPosition.z;
+		vec3 movement = normal * color.a * 0.02f * (sin(seed)+0.25f * cos(seed * 5.2f + 3.2f ));
+		vertexWorldPosition.xyz += movement;
+	}
+
 #ifdef DOUBLE_FLOAT
 	vertexWorldPosition = vec4(dposition);
 	gl_Position = vec4(cameraProjectionMatrix * dposition);

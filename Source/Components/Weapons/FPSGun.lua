@@ -330,7 +330,7 @@ function FPSGun:Fire()
     if self.muzzle then
         if not self.muzzlesprite then
             self.muzzlesprite = CreateSprite(world, self.muzzleflashsize, self.muzzleflashsize)
-            self.muzzlesprite:SetHandle(-self.muzzleflashsize * 0.5, -self.muzzleflashsize * 0.5)
+            --self.muzzlesprite:SetHandle(-self.muzzleflashsize * 0.5, -self.muzzleflashsize * 0.5)
             self.muzzlesprite:SetViewMode(SPRITEVIEW_DEFAULT)
             self.muzzlesprite:SetMaterial(LoadMaterial("Materials/Effects/muzzleflash.mat"))
 			self.muzzlesprite:SetParent(self.muzzle)

@@ -1,0 +1,12 @@
+{
+	"material":
+	{
+		"attribution": "https://ambientcg.com/view?id=Ground036",
+		"author": "AmbientCG",
+		"license": "cc0",
+		"texture0": "./Ground036.dds",
+		"texture1": "./Ground036_norm.dds",
+		"texture2": "./Ground036_orm.dds",
+		"texture3": "./Ground036_disp.dds"
+	}
+}

@@ -16,14 +16,14 @@ local function InitMainMenu(mainMenu)
 	mainMenu.scene = LoadMap(mainMenu.world, "Maps/menu.ultra")
 	--Create user interface
 	local frameSize = framebuffer:GetSize();
-	mainMenu.ui = CreateInterface(mainMenu.world, font, frameSize)
-	mainMenu.ui:SetRenderLayers(2);
-	--to make backgrount transparent
-	mainMenu.ui.background:SetColor(0.0, 0.0, 0.0, 0.0)
 	--Create camera for GUI
 	mainMenu.uiCamera = CreateCamera(mainMenu.world, PROJECTION_ORTHOGRAPHIC)
 	mainMenu.uiCamera:SetPosition(frameSize.x * 0.5, frameSize.y * 0.5, 0);
 	mainMenu.uiCamera:SetRenderLayers(2);
+	mainMenu.ui = CreateInterface(mainMenu.uiCamera, font, frameSize)
+	mainMenu.ui:SetRenderLayers(2);
+	--to make backgrount transparent
+	mainMenu.ui.background:SetColor(0.0, 0.0, 0.0, 0.0)
 	--for correct rendering above 3D scene
 	mainMenu.uiCamera:SetClearMode(CLEAR_DEPTH);
 	--Menu buttons

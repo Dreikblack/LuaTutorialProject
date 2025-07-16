@@ -21,7 +21,6 @@ FPSPlayer.flashlightrotation = Quat(0,0,0,1)
 FPSPlayer.weapons = {}
 FPSPlayer.initialslot = 0
 FPSPlayer.movement = Vec3(0)
-FPSPlayer.doResetMousePosition = true
 
 function FPSPlayer:Start()
 
@@ -61,9 +60,11 @@ function FPSPlayer:Start()
 
     local n
 	for n = 1, 3 do
-		self.sound_hit[n] = LoadSound("Sound/Impact/bodypunch" .. tostring(n) .. ".wav")
-    end
-	self.sound_jump = LoadSound("Sound/Footsteps/Concrete/jump.wav")
+        if FileType("Sound/Impact/bodypunch" .. tostring(n) .. ".wav") == 1 then
+        	self.sound_hit[n] = LoadSound("Sound/Impact/bodypunch" .. tostring(n) .. ".wav")    
+        end
+	end
+    self.sound_jump = LoadSound("Sound/Footsteps/Concrete/jump.wav")
 	sound_flashlight = LoadSound("Sound/Items/flashlightswitch.wav")
 	for n = 1, 4 do
 		self.sound_step[n] = LoadSound("Sound/Footsteps/Concrete/step" .. tostring(n)  .. ".wav")
@@ -218,7 +219,7 @@ function FPSPlayer:Load(properties, binstream, scene, flags, extra)
 	self.weapons = {}
 	for n = 0, 3 do
         local key = "slot" .. tostring(n)
-		if type(properties[key]) == "string" then
+		if type(properties[key]) == "string" and properties[key] ~= "" then
 			local path = properties[key]
             local prefab = LoadPrefab(world, path)
 			self.weapons[n + 1] = prefab
@@ -283,9 +284,7 @@ function FPSPlayer:Update()
         local cx = Round(fbsize.x / 2)
         local cy = Round(fbsize.y / 2)
         local mpos = window:GetMousePosition()
-        if self.doResetMousePosition then
-            window:SetMousePosition(cx, cy)
-        end
+        window:SetMousePosition(cx, cy)
         local centerpos = window:GetMousePosition()
 
         if self.freelookstarted then

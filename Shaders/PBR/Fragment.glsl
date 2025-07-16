@@ -100,7 +100,7 @@ void main()
     // The default index of refraction of 1.5 yields a dielectric normal incidence reflectance of 0.04.
     materialInfo.ior = 1.5f;//ExtractMaterialRefractionIndex(material);
     materialInfo.f0 = vec3(0.04f);//0.04 is default
-    materialInfo.specularWeight = 1.0f;
+    materialInfo.specularWeight = material.speculargloss.a;
     materialInfo.attenuationDistance = 0.0f;
     materialInfo.attenuationColor = vec3(1.0f);
     materialInfo.transmissionFactor = 1.0f;//GetMaterialTransmission(material);
@@ -154,30 +154,40 @@ void main()
 
 #ifdef USER_HOOK
 
-    SurfaceInput surfinput;
-    surfinput.texcoords = texcoords;
-    surfinput.color = color;
-    surfinput.normal = normal;
-    surfinput.tangent = tangent;
-    surfinput.bitangent = bitangent;
-    surfinput.material = material;
+    Surface surface;
+    surface.thickness = material.thickness;
+    surface.texcoords = texcoords;
+    surface.basecolor = color;
+    surface.normal = normal;
+    surface.tangent = tangent.xyz;
+    surface.bitangent = bitangent.xyz;
+    surface.metallic = 0.0f;
+    surface.roughness = 1.0f;
+    surface.emission = vec3(0.0);
+    surface.displacement = 0.0f;
+    //surface.specularweight = 1.0f;
 
-    SurfaceOutput surfinfo;
-    surfinfo.normal = n;
-    surfinfo.basecolor = vec4(1.0f);
-    surfinfo.metallic = 0.0f;
-    surfinfo.roughness = 1.0f;
-    surfinfo.reflectance = vec3(0.0f);
-    surfinfo.emission = vec3(0.0f);
+    vec2 surfaceocclusion_normalscale = unpackHalf2x16(material.occlusion);
+    surface.occlusion = surfaceocclusion_normalscale.x;
+    surface.normalscale = surfaceocclusion_normalscale.y;
 
-    UserHook(surfinput, surfinfo);
+    UserHook(surface, material);
+
+#ifdef ALPHA_DISCARD
+    if (surface.basecolor.a < material.alphacutoff) discard;
+#endif
+
+    materialInfo.baseColor = surface.basecolor.rgb;
+    n = surface.normal;
+    materialInfo.metallic = clamp(surface.metallic, 0.0f, 1.0f);
+	materialInfo.f0 = surface.reflectance;
+    //materialInfo.specularWeight = surface.specularweight;
+    materialInfo.perceptualRoughness = clamp(surface.roughness, 0.04f, 1.0f);
+    materialInfo.c_diff = surface.basecolor.rgb;
+    baseColor = surface.basecolor;
+    materialInfo.c_diff = mix(materialInfo.baseColor.rgb,  vec3(0.0f), materialInfo.metallic);
+    materialInfo.f0 = mix(materialInfo.f0, materialInfo.baseColor.rgb, materialInfo.metallic);
     
-    materialInfo.metallic = surfinfo.metallic;
-	materialInfo.f0 = surfinfo.reflectance;
-    materialInfo.perceptualRoughness = surfinfo.roughness;
-    materialInfo.c_diff = surfinfo.basecolor.rgb;
-    baseColor = surfinfo.basecolor;
-
 #endif
 
 //outColor[0].rgb = n * 0.5 + 0.5;
@@ -199,13 +209,14 @@ void main()
     
     materialInfo.metallic = 0;
 	materialInfo.f0 = material.speculargloss.rgb;
-    materialInfo.perceptualRoughness = 1.0f - material.speculargloss.a;
-    if (material.textureHandle[TEXTURE_METALLICROUGHNESS] != uvec2(0))
+    float gloss = 1.0f - material.roughness;
+	if (material.textureHandle[TEXTURE_METALLICROUGHNESS] != uvec2(0))
     {
         vec4 sgSample = (texture(sampler2D(material.textureHandle[TEXTURE_METALLICROUGHNESS]), texcoords.xy));        
-        materialInfo.perceptualRoughness *= 1.0f - sgSample.a; // glossiness to roughness
+        gloss *= sgSample.a;
         materialInfo.f0 *= sgSample.rgb; // specular
     }
+	materialInfo.perceptualRoughness = 1.0f - gloss;// glossiness to roughness
 
     //Detail map
     /*if (material.textureHandle[TEXTURE_AMBIENTOCCLUSION + 1] != uvec2(0))
@@ -286,6 +297,8 @@ void main()
         AmbientLight *= ao;
     }
 
+    vec3 originalnormal = n;
+
 #ifdef LIGHTING
     if ((RenderFlags & RENDERFLAGS_NO_LIGHTING) == 0)
     {
@@ -306,7 +319,7 @@ void main()
         renderprobes = false;
         f_diffuse.rgb = materialInfo.c_diff * AmbientLight;
         f_specular = vec3(0.0f);// we don't want specular reflection in probe renders since it is view-dependent
-    }    
+    }
 #else
     f_diffuse.rgb = baseColor.rgb;
 #endif
@@ -342,13 +355,13 @@ void main()
         }
     }
 
-    if (!gl_FrontFacing)
+    /*if (!gl_FrontFacing)
     {
         if (((materialFlags & MATERIAL_BACKFACELIGHTING) == 0) || n.y < 0.0f)
         {
             n *= -1.0f;
         }
-    }
+    }*/
     //if (!gl_FrontFacing) n *= -1.0f;
 
     vec3 prev_f_specular = f_specular;
@@ -373,7 +386,9 @@ void main()
                 iblspecular *= ao;
                 if (iblspecular.r + iblspecular.g + iblspecular.b > 0.0f)
                 {
-                    f_specular += (getIBLRadianceGGX(Lut_GGX, iblspecular.rgb, n, v, materialInfo.perceptualRoughness, materialInfo.f0, materialInfo.specularWeight));
+                    vec3 sn = n;
+                    if (dot(sn, v) < 0.0f) sn *= -1.0f;
+                    f_specular += (getIBLRadianceGGX(Lut_GGX, iblspecular.rgb, sn, v, materialInfo.perceptualRoughness, materialInfo.f0, materialInfo.specularWeight));
                 }
                 //f_specular.r = 1.0f;// for testing...
             }
@@ -544,6 +559,8 @@ void main()
     //Editor grid
     if ((cameraflags & ENTITYFLAGS_SHOWGRID) != 0)
     {
+        vec3 eyedir = CameraPosition - vertexWorldPosition.xyz;
+        float d = length(eyedir);
         if ((entityflags & ENTITYFLAGS_SHOWGRID) != 0) outColor[0].rgb += WorldGrid(vertexWorldPosition.xyz, normal, d);
     }
     
