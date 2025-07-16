@@ -28,14 +28,14 @@ local function StartGameEventCallback(Event, Extra)
 	loadingWorld:Render(framebuffer)
     if Event.text ~= nil and Event.text ~= "" then
         --in lua .. used for string concatenation
-        game = CreateGame("Maps/" .. Event.text);
+        game = CreateGame("Maps/" .. Event.text)
     else
-        game = CreateGame("Maps/start.ultra");
+        game = CreateGame("Maps/start.ultra")
     end
 	--switching current render and update targets for loop
 	currentWorld = game.world
 	currentUi = game.ui
-	return true;
+	return true
 end
 
 --function should be declared after vars that this function uses
@@ -46,9 +46,9 @@ local function MainMenuEventCallback(Event, Extra)
     loadingWorld:Render(framebuffer)
 	menu = CreateMainMenu()
 	--switching current render and update targets for loop
-	currentWorld = menu.world;
-	currentUi = menu.ui;
-	return true;
+	currentWorld = menu.world
+	currentUi = menu.ui
+	return true
 end
 
 local displays = GetDisplays()
@@ -56,34 +56,35 @@ local displays = GetDisplays()
 window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 -- Create a framebuffer, needed for rendering
 framebuffer = CreateFramebuffer(window)
-font = LoadFont("Fonts/arial.ttf");
+font = LoadFont("Fonts/arial.ttf")
 
-loadingWorld = CreateWorld();
+loadingWorld = CreateWorld()
 local centerX = framebuffer:GetSize().x * 0.5
 local centerY = framebuffer:GetSize().y * 0.5
 local labelHeight = framebuffer:GetSize().y * 0.2
 loadingBackground = CreateSprite(loadingWorld, framebuffer.size.x, framebuffer.size.y)
-loadingBackground:SetColor(0.2, 0.2, 0.2);
-loadingBackground:SetRenderLayers(2);
+loadingBackground:SetColor(0.2, 0.2, 0.2)
+loadingBackground:SetRenderLayers(2)
+loadingBackground:SetPosition(centerX, centerY, 0)
 loadingText = CreateSprite(loadingWorld, font, "LOADING", labelHeight, TEXT_CENTER | TEXT_MIDDLE)
 loadingText:SetPosition(centerX, centerY + labelHeight * 0.5, 0)
 -- 0 layer - no render, 1 - default render, we will use 2 for UI and sprites
 loadingText:SetRenderLayers(2)
 
 -- Creating camera for sprites, which needs to be orthographic (2D) for UI and sprites if they used as UI
-loadingCamera = CreateCamera(loadingWorld, PROJECTION_ORTHOGRAPHIC);
-loadingCamera:SetPosition(centerX, centerY, 0);
+loadingCamera = CreateCamera(loadingWorld, PROJECTION_ORTHOGRAPHIC)
+loadingCamera:SetPosition(centerX, centerY, 0)
 -- camera render layer should match with stuff that you want to be visible for this camera. RenderLayers is a bit mask, so you can combine few layers, but probably you don't need it in most cases
 loadingCamera:SetRenderLayers(2)
 
 currentWorld = loadingWorld
 
 --to show Loading screen before Main Menu
-loadingWorld:Render(framebuffer);
+loadingWorld:Render(framebuffer)
 
 --ListenEvent are needed to do something in callback function when specific even from specfic source (or not, if 2nd param is nil) emitted
-ListenEvent(EVENT_GAME_START, nil, StartGameEventCallback);
-ListenEvent(EVENT_MAIN_MENU, nil, MainMenuEventCallback);
+ListenEvent(EVENT_GAME_START, nil, StartGameEventCallback)
+ListenEvent(EVENT_MAIN_MENU, nil, MainMenuEventCallback)
 --let's try it out! 
 EmitEvent(EVENT_MAIN_MENU)
 
