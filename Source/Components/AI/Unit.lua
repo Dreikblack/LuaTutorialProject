@@ -87,15 +87,15 @@ function Unit:Start()
         if (seq ~= -1) then
             local count = model:CountAnimationFrames(seq)
             -- to disable attack state at end of attack animation
-            model.skeleton:AddHook(seq, count - 1, self.EndAttackHook, self)
+            model.skeleton:AddHook(seq, count - 1, Unit.EndAttackHook, self)
             -- to deal damage to target at range at specific animation frame
-            model.skeleton:AddHook(seq, self.attackFrame, self.AttackHook, self)
+            model.skeleton:AddHook(seq, self.attackFrame, Unit.AttackHook, self)
         end
         seq = model:FindAnimation(self.painName)
         if (seq ~= -1) then
             local count = model:CountAnimationFrames(seq)
             -- to disable pain state at end of pain animation
-            model.skeleton:AddHook(seq, count - 1, self.EndPainHook, self)
+            model.skeleton:AddHook(seq, count - 1, Unit.EndPainHook, self)
         end
         if (self.health <= 0) then
             seq = model:FindAnimation(self.deathName)
@@ -135,7 +135,6 @@ function Unit:Start()
         -- to put it behind health bar
         self.healthBarBackground:SetOrder(0)
         self.healthBar:SetOrder(1)
-        --self.healthBarBackground:SetPosition(0, 0)
     end
 end
 
@@ -223,7 +222,7 @@ function Unit:Save(properties, binstream, scene, flags, extra)
 end
 
 function Unit:Damage(amount, attacker)
-    if ~self:isAlive() then
+    if not self:isAlive() then
         return
     end
     self.health = self.health - amount
@@ -234,7 +233,7 @@ function Unit:Damage(amount, attacker)
     local now = world:GetTime()
     if (self.health <= 0) then
         self:Kill(attacker)
-    elseif (~self.isInPain and now - self.painCooldownTime > self.painCooldown) then
+    elseif (not self.isInPain and (now - self.painCooldownTime) > self.painCooldown) then
         self.isInPain = true
         self.isAttacking = false
         local model = Model(self.entity)
@@ -257,6 +256,8 @@ function Unit:Damage(amount, attacker)
 end
 
 function Unit:Kill(attacker)
+    --need to remove pointer to other entity so it could be deleted
+    self.targetWeak = nil
     local entity = self.entity
     if (entity == nil) then
         return
@@ -297,6 +298,7 @@ function Unit.RemoveEntityCallback(ev, extra)
     unit.removeEntityTimer:Stop()
     unit.removeEntityTimer = nil
     unit.sceneWeak:RemoveEntity(unit.entity)
+    unit.sceneWeak = nil
     return false
 end
 
@@ -306,7 +308,7 @@ function Unit:scanForTarget()
     if (world ~= nil) then
         -- We only want to perform this few times each second, staggering the operation between different entities.
         -- Pick() operation is kinda CPU heavy. It can be noticeable in Debug mode when too much Picks() happes in same game cycle.
-        -- Did not notice yet it in Release mode, but it's better to have it optimized Debug as well anyway.
+        -- Did not notice it yet in Release mode, but it's better to have it optimized Debug as well anyway.
         local now = world:GetTime()
         if (now < self.nextScanForTargetTime) then
             return
@@ -314,12 +316,13 @@ function Unit:scanForTarget()
         self.nextScanForTargetTime = now + Random(100, 200)
 
         local entityPosition = entity:GetPosition(true)
-        local positionLower = entityPosition
+        --simple copy would copy pointer to new var, so this case it's better recreate Vec3 here
+        local positionLower = Vec3(entityPosition.x, entityPosition.y, entityPosition.z)
         positionLower.x = positionLower.x - self.perceptionRadius
         positionLower.z = positionLower.z - self.perceptionRadius
         positionLower.y = positionLower.y - self.perceptionRadius
 
-        local positionUpper = entityPosition
+        local positionUpper = Vec3(entityPosition.x, entityPosition.y, entityPosition.z)
         positionUpper.x = positionUpper.x + self.perceptionRadius
         positionUpper.z = positionUpper.z + self.perceptionRadius
         positionUpper.y = positionUpper.y + self.perceptionRadius
@@ -330,7 +333,7 @@ function Unit:scanForTarget()
         for k, foundEntity in pairs(entitiesInArea) do
             local foundUnit = foundEntity:GetComponent("Unit")
             -- targets are only alive enemy units
-            if not (foundUnit == nil or not foundUnit:isAlive() or not foundUnit:isEnemy(team) or not foundUnit.entity) then
+            if not (foundUnit == nil or not foundUnit:isAlive() or not foundUnit:isEnemy(self.team) or foundUnit.entity == nil) then
                 local dist = foundEntity:GetDistance(entity)
                 if not (dist > self.perceptionRadius) then
                     -- check if no obstacles like walls between units
@@ -371,7 +374,7 @@ function Unit:Update()
             unitUiPosition.x = unitUiPosition.x - self.healthBarBackground.size.x / 2
             self.healthBar:SetPosition(unitUiPosition.x, unitUiPosition.y, 0.99901)
             self.healthBarBackground:SetPosition(unitUiPosition.x, unitUiPosition.y, 0.99902)
-            local doShow = self.isSelected or (self.health ~= self.maxHealth and ~self.isPlayer)
+            local doShow = self.isSelected or (self.health ~= self.maxHealth and not self.isPlayer)
             self.healthBar:SetHidden(not doShow)
             self.healthBarBackground:SetHidden(not doShow)
         end
@@ -430,6 +433,7 @@ function Unit:Update()
                 if (self.agent ~= nil) then
                     self.agent:Navigate(target:GetPosition(true))
                 end
+                self.isAttacking = false
                 model:Animate(self.runName, 1.0, 250, ANIMATION_LOOP)
             else
                 if (self.agent) then
@@ -469,13 +473,13 @@ function Unit.AttackHook(skeleton, extra)
 	if (unit == nil) then
 		return
     end
-	local entity = self.entity
+	local entity = unit.entity
 	local target = unit.targetWeak
 	if (target ~= nil) then
 		local pos = entity:GetPosition(true)
 		local dest = target:GetPosition(true) + target:GetVelocity(true)
 		--attack in target in range
-		if (pos.DistanceToPoint(dest) < unit.attackRange) then
+		if (pos:DistanceToPoint(dest) < unit.attackRange) then
 			for k, targetComponent in pairs(target.components) do
                 if targetComponent.Damage and type(targetComponent.Damage) == "function" then
                     targetComponent:Damage(unit.attackDamage, entity)
@@ -488,16 +492,6 @@ end
 function Unit.EndAttackHook(skeleton, extra)
     local unit = Component(extra)
     unit.attacking = false
-end
-
-function Unit.EndAttackHook(skeleton, extra)
-    local unit = Component(extra)
-    if (unit ~= nil) then
-        unit.isInPain = false
-        if (unit:isAlive() and unit.entity:GetWorld() ~= nil) then
-            unit.painCooldownTime = unit.GetEntity():GetWorld():GetTime()
-        end
-    end
 end
 
 function Unit.EndPainHook(skeleton, extra)
